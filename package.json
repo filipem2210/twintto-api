@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "filipem2210 <47154367+filipem2210@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
 }
