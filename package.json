@@ -5,9 +5,17 @@
   "author": "filipem2210 <47154367+filipem2210@users.noreply.github.com>",
   "license": "MIT",
   "lint-staged": {
-    "*.js": ["standard"]
+    "*.js": [
+      "standard --fix"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "devDependencies": {
+    "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
     "standard": "^14.3.4"
   }
