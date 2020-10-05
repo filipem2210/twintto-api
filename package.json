@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "test": "jest --watchAll --silent --colors --noStackTrace",
-    "test:staged": "jest --passWithNoTests --silent --colors --noStackTrace"
+    "test:staged": "jest --passWithNoTests --silent --colors --noStackTrace",
+    "test:ci": "jest --coverage"
   },
   "standard": {
     "env": ["jest"]
