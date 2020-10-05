@@ -5,9 +5,10 @@
   "author": "filipem2210 <47154367+filipem2210@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest --watchAll --silent --colors --noStackTrace",
-    "test:staged": "jest --passWithNoTests --silent --colors --noStackTrace",
-    "test:ci": "jest --coverage"
+    "test": "jest --silent --colors --noStackTrace --passWithNoTests",
+    "test:unit": "yarn test --watch",
+    "test:staged": "yarn test",
+    "test:ci": "yarn test --coverage"
   },
   "standard": {
     "env": ["jest"]
