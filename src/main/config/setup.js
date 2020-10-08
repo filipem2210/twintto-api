@@ -2,6 +2,7 @@ const helmet = require('../middlewares/helmet')
 const cors = require('../middlewares/cors')
 const jsonParser = require('../middlewares/json-parser')
 const contentType = require('../middlewares/content-type')
+const compression = require('../middlewares/compression')
 const morgan = require('../middlewares/morgan')
 
 module.exports = app => {
@@ -10,5 +11,6 @@ module.exports = app => {
   app.use(cors)
   app.use(jsonParser)
   app.use(contentType)
+  app.use(compression)
   app.use(morgan)
 }
