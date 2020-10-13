@@ -34,7 +34,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.2",
     "morgan": "^1.10.0",
-    "pm2": "^4.5.0",
     "validator": "^13.1.17"
   }
 }
