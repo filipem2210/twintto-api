@@ -5,7 +5,7 @@
   "author": "filipem2210 <47154367+filipem2210@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "pm2 start pm2.config.js",
+    "start": "pm2-runtime pm2.config.js",
     "test": "jest --colors --noStackTrace --passWithNoTests --runInBand",
     "test:unit": "yarn test --watch -c jest-unit-config.js",
     "test:integration": "yarn test --watch -c jest-integration-config.js",
