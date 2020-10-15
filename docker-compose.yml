@@ -24,8 +24,6 @@ services:
       - .:/usr/src/app
       - /usr/src/app/node_modules
     working_dir: /usr/src/app
-    links:
-      - twintto_db
     command: sh -c './wait-for twintto_db:27017 -- yarn && yarn global add pm2 && yarn cache clean && yarn start'
 
 volumes:
