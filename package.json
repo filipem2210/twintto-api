@@ -10,7 +10,8 @@
     "test:unit": "yarn test --watch -c jest-unit-config.js",
     "test:integration": "yarn test --watch -c jest-integration-config.js",
     "test:staged": "yarn test -o --silent",
-    "test:ci": "yarn test --coverage --silent"
+    "test:ci": "yarn test --coverage --silent",
+    "test:sec": "npx snyk test"
   },
   "standard": {
     "env": [
