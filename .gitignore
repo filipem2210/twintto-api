@@ -4,3 +4,5 @@ globalConfig.json
 .vscode
 .env
 dist
+private.pem
+public.pem

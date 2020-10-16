@@ -5,11 +5,11 @@ const LoadUserByEmailRepository = require('../../infra/repositories/load-user-by
 const UpdateAccessTokenRepository = require('../../infra/repositories/update-access-token-repository')
 const Encrypter = require('../../utils/helpers/encrypter')
 const TokenGenerator = require('../../utils/helpers/token-generator')
-const { tokenSecret } = require('../config/env')
+const { tokenSecret, privateKey } = require('../config/env')
 
 module.exports = class LoginRouterComposer {
   static compose () {
-    const tokenGenerator = new TokenGenerator(tokenSecret)
+    const tokenGenerator = new TokenGenerator(tokenSecret, privateKey)
     const encrypter = new Encrypter()
     const updateAccessTokenRepository = new UpdateAccessTokenRepository()
     const loadUserByEmailRepository = new LoadUserByEmailRepository()
