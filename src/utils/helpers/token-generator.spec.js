@@ -37,7 +37,8 @@ describe('Token Generator', () => {
     expect(jwt.payload).toEqual({
       _id: 'any_id'
     })
-    expect(jwt.secret).toEqual({ key: 'privateKey', passphrase: 'secret' })
+    expect(jwt.key).toEqual(sut.key)
+    expect(jwt.passphrase).toEqual(sut.passphrase)
   })
 
   test('Should throw if no secret is provided', () => {
