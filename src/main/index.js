@@ -1,12 +1,7 @@
 const MongoHelper = require('../infra/helpers/mongo-helper')
 const { mongoUrl, port } = require('./config/env')
-const logger = require('pino')({
-  level: 'info',
-  prettyPrint: {
-    levelFirst: true,
-    colorize: true
-  }
-})
+const loggerConfig = require('../main/loggers/config/pino.config')
+const logger = require('pino')(loggerConfig)
 
 MongoHelper.connect(mongoUrl)
   .then(() => {
