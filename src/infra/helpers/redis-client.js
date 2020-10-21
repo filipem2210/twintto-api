@@ -19,4 +19,6 @@ const redisConfig = {
   }
 }
 
-module.exports = redis.createClient(redisConfig)
+const redisClient = redis.createClient(redisConfig)
+
+module.exports = redisClient
