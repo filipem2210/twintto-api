@@ -15,7 +15,7 @@ services:
       - twintto-mongo-data:/data/db
 
   twintto_cache:
-    image: redis:6.0.8-alpine3.12
+    image: redis:6.0.9-alpine3.12
     container_name: twintto_cache
     restart: always
     ports:
@@ -23,7 +23,7 @@ services:
     command: redis-server
 
   twintto_api:
-    image: node:12.19.0-alpine3.12
+    image: node:14.15.0-alpine3.12
     container_name: twintto_api
     restart: always
     ports:
